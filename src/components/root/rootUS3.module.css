@@ -1,0 +1,80 @@
+.navUS3 {
+  color: #ffffff;
+  display: flex;
+  padding: 1rem 3rem;
+}
+
+.navUS3 > div {
+  display: flex;
+  column-gap: 0.5rem;
+  align-self: center;
+}
+
+.navUS3 > div:first-child {
+  margin-right: auto;
+}
+
+.navUS3 > div > a {
+  padding: 0.5rem 0.7rem;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.navUS3 > div:last-child > a:first-child {
+  color: #d50f3e;
+  font-weight: 700;
+}
+
+.navUS3 > div:last-child > a:last-child {
+  border: 0.0625rem solid #000000;
+}
+
+.navUS3 > div > a.current {
+  border: 0.0625rem solid #000000;
+}
+
+@media screen and (max-width: 720px) {
+  .navUS3 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    border: 1px solid blue;
+    display: block;
+    display: none;
+    padding: 0;
+    z-index: 100;
+    background-color: #d50f3e;
+  }
+  .navUS3 > div {
+    display: block;
+  }
+  .navUS3 > div:first-child {
+    /* margin-right: auto; */
+    color: white;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    position: fixed;
+    top: 10%;
+    width: 100%;
+  }
+  .navUS3 > div > a {
+    display: block;
+    padding: 0.5rem 0.7rem;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+}
